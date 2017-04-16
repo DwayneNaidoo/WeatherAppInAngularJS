@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="weatherStyle.css"></link>
+  <meta charset="utf-8">
+  <title>WeatherApp In AngularJs</title>
+
+</head>
+<body class="body" ng-app="Weather" ng-controller="WeatherControl as WeatherCon">
+<div ng-show="loading" class="loading" style=" top:20%; position: absolute; width:200%;background-color: lightgrey; transition-delay: 10s;   animation-delay: 10s;"><label style="font-size: 50px;"> LOADING...</label></div>
+<div class="MainHeader" ng-controller="Header">
+<h1>{{weatherInfo.header}}</h1>
+
+ <h2>{{WeatherCon.cityName}} , {{WeatherCon.countryName}}</h2>
+</div>
+<p><input type="button" class="btnrefresh" value="Refresh Page" onClick="window.location.reload()">
+</p>
+  <div class="infocard">
+  <h3>Current Forecast</h3>   
+
+<img src="th06X2NV8Q.jpg" width="30%"><br/>
+        Min : <label class="degrees"> {{WeatherCon.tempMin}}</label>°C
+    
+      Max : <label class="degrees"> {{WeatherCon.tempMax}}</label>°C
+     <br/>   day: {{WeatherCon.day}} °C
+     <br/>   night:  {{WeatherCon.night}} °C
+    <br/><label class="degrees">  {{ WeatherCon.weatherdes}}</label>
+    
+  </div>
+  <p>
+  <div class="infocard" >
+  <h3>Tomorrows Forecast</h3>   
+
+<img src="th06X2NV8Q.jpg" width="30%"><br/>
+        Min : <label class="degrees"> {{WeatherCon.tempMin2}}</label>°C
+    
+      Max : <label class="degrees"> {{WeatherCon.tempMax2}}</label>°C
+     <br/>   day: {{WeatherCon.day2}} °C
+     <br/>   night:  {{WeatherCon.night2}} °C
+    <br/><label class="degrees">  {{ WeatherCon.weatherdes2}}</label>
+    
+  </div>
+</p>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+<script type="text/javascript" src="Weather.js"></script>
+
+</html>

@@ -1,0 +1,45 @@
+.MainHeader{
+		font-style: normal;
+	font-family: "arial";
+
+	color: whitesmoke;
+}	
+.body{
+	background-image: url('coast-stormy-weather_00450396.jpg');
+
+
+ }
+ .infocard{
+ text-align: center;
+  background: linear-gradient(to right, blue , lightskyblue); /* Standard syntax */
+  box-shadow: 10px 10px 5px ;
+   width: 300px;
+    font-family: "arial";
+    padding-top: 1px;
+   padding-bottom: 10px;
+ }
+.degrees {
+    color: black;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.weatherContent{
+	width: 100%;
+
+}
+.loading {
+ border:1px solid #ddd; 
+ padding:20px;
+  margin:40px 5px; 
+  width:80px;
+
+}
+.btnrefresh {
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
